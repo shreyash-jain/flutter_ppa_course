@@ -17,10 +17,14 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
         home: Scaffold(
             body: SafeArea(
-              child: OutlinedButton(
-                  child: Text("My Button"),
-                  onPressed: onClickAction,
-                ),
+              child: Container(
+                color: Colors.yellow,
+                margin: EdgeInsets.only(left: 10),
+                child: Text("Hello world"),
+                height: 100,
+                width: 100,
+                alignment: FractionalOffset(0.5,0.5),
+              )
             )));
   }
 
